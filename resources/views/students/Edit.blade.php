@@ -21,7 +21,7 @@
 
 </div>
 
-@if ($errors = any())
+@if ($errors->any())
 <div class="alert alert-danger">
     
     <strong>Whoops</strong> some problems with your input.<br><br>

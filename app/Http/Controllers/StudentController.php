@@ -10,7 +10,7 @@ class StudentController extends Controller
     
     public function index()
     {
-        $students = Student::latest()->paginate(5);
+        $students = Student::latest()->paginate(10);
         return view('students.index',compact('students'))
         ->with('i',(request()->input('page',1)-1)*5);
     }
@@ -58,8 +58,8 @@ class StudentController extends Controller
 
         $student->update($request->all());
 
-        return redirect()->route('student.index')
-        ->with('success','Student update successfully');
+        return redirect()->route('students.index')
+        ->with('success','Student updated successfully');
     }
 
     
