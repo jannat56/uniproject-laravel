@@ -5,12 +5,12 @@
 
 
 
-    <div class="back-form-container">
+    {{-- <div class="back-form-container"> --}}
 
        
-            <a href="{{ route('students.index') }}">Back</a>
+            {{-- <a href="{{ route('students.index') }}">Back</a> --}}
 
-        </div>
+        {{-- </div> --}}
   
 @if ($errors->any())
 <div class="">
@@ -47,7 +47,7 @@
                     </div>
                
                
-                    <div class="coure-design">
+                    <div class="course-design">
 
                         <strong>Course</strong>
 
@@ -65,9 +65,18 @@
 
                 <div>
                     <button class="btn-form-container" type="submit">Submit
+                        
 
 
                     </button>
+                    
+                    <button class="back-form-container" type="submit">Back
+                        
+
+
+                    </button>
+                    
+                    {{-- <a class="back-form-container" href="{{ route('students.index') }}">Back</a> --}}
 
 
                 </div>

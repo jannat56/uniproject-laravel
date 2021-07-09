@@ -30,6 +30,7 @@
         <th>Action</th>
         <th>Action</th>
         
+        
 
     </tr>
 
@@ -43,8 +44,9 @@
             <td>{{ $student->fee }}</td>
             
             <td>
-                <a class="btn btn-primary" href="{{ route('students.edit',$student->id) }}">Edit</a>
-            </td>
+                <a href="{{ route('students.edit',$student->id) }}">Edit</a>
+                {{-- <button type="submit" class="edit-btn-container">Edit</button> --}}
+            </td> 
             
             
             <td>
@@ -57,7 +59,10 @@
 
             @method('DELETE')
 
-            <button type="submit" class="btn btn-danger">Delete</button>
+            <button type="submit" class="delete-btn-container">Delete</button>
+            
+            
+
 
         </form>
 

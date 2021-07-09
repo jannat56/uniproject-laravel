@@ -4,16 +4,15 @@
 @section('content')
 
 
-<div class="row">
-    <div class="col-lg-12 margin-tb">
 
-        <div class="pull-left">
-            <h2>Edit Product</h2>
+    <div class="edit-product">
 
-        </div>
+        <h2>Edit Product</h2>
 
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('students.index') }}">Back</a>
+            </div>
+
+        <div>
+            <a href="{{ route('students.index') }}"></a>
 
         </div>
     </div>
@@ -41,42 +40,44 @@
 
 
 
-            <form action="{{ route('students.update',$student->id) }}"method="POST">
+            <form class="form-design"action="{{ route('students.update',$student->id) }}"method="POST">
            
 
             @csrf
             @method('PUT')
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
+            
+                
+                    <div class="stud-design">
 
                         <strong>StudentName:</strong>
 
-                        <input type="text" name="studname" value={{ $student->studname }}class="form-control" placeholder="Name">
+                        <input type="text" name="studname" value="{{ $student->studname }}" class="form-control" placeholder="Name">
 
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
+              
+               
+                    <div class="course-design">
 
                         <strong>Course</strong>
 
-                        <input type="text" name="course" value={{ $student->course }}class="form-control" placeholder="Course">
-                    </div>
+                        <input type="text" name="course" value="{{ $student->course }}" class="form-control" placeholder="Course">
+                    
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
+              
+                    <div class="fee-design">
 
                         <strong>Fee</strong>
 
-                        <input type="text" name="fee" value={{ $student->fee }}class="form-control" placeholder="Fee">
-                    </div>
+                        <input type="text" name="fee" value="{{ $student->fee }}" class="form-control" placeholder="Fee">
+                   
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div>
+                   
+                    <button type="submit" class="btn-form-container">Submit</button>
+                    <button type="submit" class="back-form-container">Back</button>
 
 
                 </div>

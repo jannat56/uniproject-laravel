@@ -37,8 +37,13 @@
     
     .back-form-container{
        
-        text-align: center;
-       
+        
+       background-color: lightseagreen;
+       padding: 10px 10px;
+        border-radius: 5px;
+        /* margin-left: 730px;
+        margin-bottom: 10px;
+        margin-top: 30px;  */
 
     }
 
@@ -48,7 +53,7 @@
         text-align: center;
         }
 
-        .coure-design{
+        .course-design{
             color:black;
             margin-top: 40px;
             text-align: center;
@@ -63,10 +68,16 @@
         .btn-form-container{
            
              background-color: limegreen;
-            text-align: center;
-            margin-left: 800px;
-            margin-top: 40px;
+             padding: 10px 10px; 
+             border-radius: 10px;
+            /* text-align: center; */
+             margin-left: 500px;
+            margin-top: 40px; 
            
+        }
+        .delete-btn-container{
+           background-color:orangered;
+           border-radius: 10px;
         }
 
        
@@ -107,4 +118,11 @@ th,td{
  tr:nth-child(even){
      background-color: lightgray;
  }
+
+ .edit-product{
+     text-align: center;
+     color: darkblue;
+ }
+
+ 
 </style>
